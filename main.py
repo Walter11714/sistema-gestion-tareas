@@ -14,7 +14,7 @@ while True:
     if opcion == "1":
         nombre = input("Ingrese la tarea: ")
         agregar_tarea(nombre)
-        print("Tarea agregada correctamente")
+        print("Tarea guardada correctamente")
 
     elif opcion == "2":
         tareas = listar_tareas()
