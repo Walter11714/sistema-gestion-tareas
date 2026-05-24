@@ -31,4 +31,25 @@ while True:
         completar_tarea(indice)
         print("Tarea completada")
 
+    elif opcion == "4":
+        indice = int(input("Ingrese índice de la tarea: "))
+        eliminar_tarea(indice)
+        print("Tarea eliminada")
 
+    elif opcion == "5":
+        texto = input("Ingrese texto a buscar: ")
+
+        resultados = buscar_tarea(texto)
+
+        if resultados:
+            for tarea in resultados:
+                print(tarea)
+        else:
+            print("No se encontraron tareas")
+
+    elif opcion == "6":
+        print("Saliendo...")
+        break
+
+    else:
+        print("Opción inválida")
