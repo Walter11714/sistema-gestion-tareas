@@ -1,5 +1,11 @@
 from tareas import *
 
+
+
+print("===================================")
+print(" BIENVENIDO AL GESTOR DE TAREAS ")
+print("===================================")
+
 while True:
     print("\n===== GESTOR DE TAREAS =====")
     print("1. Agregar tarea")
@@ -20,7 +26,7 @@ while True:
         tareas = listar_tareas()
 
         if not tareas:
-            print("No hay tareas")
+            print("No hay tareas registradas")
 
         for i, tarea in enumerate(tareas):
             estado = "✔" if tarea["completada"] else "✘"
